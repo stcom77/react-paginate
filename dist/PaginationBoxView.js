@@ -193,7 +193,15 @@ var PaginationBoxView = function (_Component) {
             this.props.previousLabel
           )
         ),
-        (0, _reactAddonsCreateFragment2.default)(this.pagination()),
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            'ul',
+            { className: 'pager__pages' },
+            (0, _reactAddonsCreateFragment2.default)(this.pagination())
+          )
+        ),
         _react2.default.createElement(
           'li',
           { onClick: this.handleNextPage, className: nextClasses },
